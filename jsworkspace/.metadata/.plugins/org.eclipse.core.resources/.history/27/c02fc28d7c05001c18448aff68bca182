@@ -1,0 +1,35 @@
+<%@page import="java.sql.DriverManager"%>
+<%@page import="org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory"%>
+<%@page import="com.mysql.cj.jdbc.Driver"%>
+<%@page import="com.mysql.cj.xdevapi.PreparableStatement"%>
+<%@page import="java.sql.Connection"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>서버연결</title>
+</head>
+<body>
+	<%
+	Connection conn;
+	PreparableStatement pstmt;
+	
+	Class.forName("com.mysql.cj.jdbc.Driver");
+	
+	String url = "jdbc:mysql://localhost/schemajms?serverTimezone=UTC";
+	String id = "root";
+	String pw = "123456";
+	
+	conn = DriverManager.getConnection(url, id, pw);
+	out.println("연결성공");
+	
+
+
+	
+	
+	%>
+</body>
+</html>

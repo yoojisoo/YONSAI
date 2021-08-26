@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>HTML5</h1>
+	<h2>CSS3</h2>
+	<p>자바스크립트</p>
+	<div>제이쿼리</div><br>
+	<button class="add">CSS 적용</button>
+	<button class="remove">CSS 적용 해체</button>
+</body>
+</html>

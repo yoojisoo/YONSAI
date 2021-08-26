@@ -1,0 +1,32 @@
+자바(프로그래밍언어)
+웹 개발 프로그래밍 : JSP,ASP,PHP...
+*클라이언트 / 서버
+-html (태그)            - JSP
+-css  (스타일)          - 서블릿
+-javascript(이벤트)    - spring framework
+
+[이클립스 jsp연동하기]
+* 웹서버(WAS) : 톰캣 8.5다운로드 -> 압축풀기
+* 버젼관리 : 개별버젼
+* 이클립스 워크스페이스 변경 (jspworkspace)로 실행
+* file->new-> other -> server 선택
+  -> 아파치서버 -> 톰캣8.5선택
+  -> 압축해제한 폴더 지정 
+* file -> new -> Dynamic Web project
+https://mainia.tistory.com/2449  
+사이트 참고.
+
+-문서 ->  document
+요소 ->  element
+
+web 전송방식
+1) GET : 전송데이터가 보임
+2) POST
+
+하이퍼링크 : 페이지이동
+<a href="">이동</a>  => get방식
+<button>버턴</button>
+<input type="button" value="버턴" />
+<br>  <br />
+
+

@@ -1,0 +1,42 @@
+웹문서저작도구
+- 클라이언트 프로그램 : html/css : javascript 
+  ; 서버가 없이 동작 가능
+※ 제이쿼리(자바스크립트 라이브러리) : 부분적인 동작을 함수화 처리한 것
+- Server : JSP, ASP, PHP... (클라이언트 프로그램 포함)
+
+1) 브라우저를 열어서 주소를 입력(요청)
+
+2) 서버에서 해당문서를 응답해줌(데이터가공)
+- 데이터베이스 정보를 요청 -> JDBC를 이용해서 처리.
+- html 문서로 변환해서 전달해줌
+
+
+정규표현식
+영문자숫자 : /^[0~9][a-z][A-Z]$/
+
+   - /:영어, ^:시작, $:끝
+영문자숫자의 4~11자리만 : /^[0~9][a-z][A-Z]{4,11}$/
+(WebContent-validation.js 파일 참고)
+
+
+<%@ include file = "dbConn.jsp"%>
+*** DB연결
+(processAddProduct.jsp 파일 참고)
+
+
+페이지 등록시?
+** jsp
+  response.sendRedirect("products.jsp");
+  리스폰즈가 기억안나면 자바스크립트로 편하게 써도된다
+
+***js
+<script>
+  alert("상품등록이 완료되었습니다.");
+  console.log("상품등록이 완료!");   //alert가 번거로우니, 개발자용
+  location.href="products.jsp"
+</script>
+
+
+submit 하면 데이터도 보내지는거라 다른 페이지에서
+인크루드 안해도됨
+

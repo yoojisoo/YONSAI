@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> --%>
+<%@page import="java.sql.*"%>
+<%@ include file="dbConn.jsp" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인OK</title>
+</head>
+<body>
+	<%
+	String uid = (String)request.getParameter("id");
+	String upw = (String)request.getParameter("pw");
+
+	Statement stmt=null;
+	ResultSet rs=null;
+	
+	String sql="select*from `join`";
+	stmt = conn.createStatement();
+	rs = stmt.executeQuery(sql);
+	
+	while(rs.next()){
+		if(rs.getString(2).equals(uid) && rs.getString(3).equals(upw)){
+	%>
+	<script>
+		alert("ㅊㅋ");
+		location.href="board.jsp";
+	</script>
+	<%
+		}else{
+	%>			
+	<script>
+		alert("ㄴㄴ");
+	</script>
+	<%
+		}
+		
+	}
+	%>			
+
+
+
+</body>
+</html>

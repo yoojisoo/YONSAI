@@ -1,0 +1,90 @@
+<!-- layout.html -->
+<!DOCTYPE html>
+<html>
+    <!-- 헤드 -->
+    <head>
+        <title>레이아웃연습</title>
+        <meta charset="utf-8">
+        <!-- 반응형 : 브라우저에 반응형임을 설정
+        설정기준 : 창의넓이 width=device-width
+        -->
+        <meta name="vieport" content="width=device-width, initial-scale=1">
+        <style>
+            /* width / height 를 줄때 border의 두께도 포함 */
+            * { box-sizing: border-box; }
+            /* 0.헤더 */ 
+            header { background-color: gold;padding: 30px;  text-align: center; font-size: 40px; color: black;} 
+
+            /* 1.섹션 : 네비게이션 : 메뉴 */
+            nav { float: left; width: 25%; height: 300px; background: greenyellow; padding: 20px; }
+            /* 태그이름 하위태그이름 
+            항목의 점을 제거 : list-style-type: none;
+            */
+            nav ul { list-style-type: none; padding: 0px; }
+
+            /* 1.섹션 : 컨텐츠 */
+            article {
+                float: left; padding: 20px;
+                width: 25%; background-color: honeydew; height: 300px;
+
+            }
+            /* 섹션 다음 엘리먼트 
+                float: left 중지            */
+            section:after { 
+                 content: ""; display: table; clear: both;
+            }
+
+        /* 2.풋터 */
+        footer { background-color: grey; padding: 10px; text-align: center; color: white; }
+
+        /* 3.반응형 설정 */    
+        @media (max-width: 600px) {
+            nav, article { width: 100%; height: auto;}
+        }
+
+        </style>
+    </head>
+    <!-- 바디 -->
+    <body>
+        <!-- 0.헤더 -->
+        <header>LAYOUT TEST WEBSITE</header>
+        <!-- 1.섹션 -->
+        <section>
+            <!-- 네비게이션 : 메뉴 -->
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">BOARD</a></li>
+                    <li><a href="#">MEMBER</a></li>
+                    <li><a href="#">GUEST</a></li>
+                </ul>
+            </nav>
+            <!-- 2. 컨텐츠 -->
+            <article>
+                <h1>제목</h1>
+                <p>&lt; 나입&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;니다.  &gt;</p>
+                <p>내용</p>
+            </article>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">BOARD</a></li>
+                    <li><a href="#">MEMBER</a></li>
+                    <li><a href="#">GUEST</a></li>
+                </ul>
+            </nav>
+            <!-- 2. 컨텐츠 -->
+            <article>
+                <h1>제목</h1>
+                <p>내용</p>
+                <p>내용</p>
+            </article>
+        </section>
+        <!-- 2.풋터 -->
+        <footer>
+            <p>&copy;ALL RIGHTS RESERVED BY ME</p>
+        </footer>
+    </body>
+</html>

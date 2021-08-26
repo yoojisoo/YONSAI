@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<script src="../js/jquery-3.6.0.js"></script> <!--제이쿼리라이브러리-->
+<script>
+$(document).ready(function(){
+	function inputCheck(){
+		if(document.regFrm.id.value==""){
+			alert("아이디를 입력해 주세요.");
+			document.regFrm.id.focus();
+		}
+		return;
+	}
+});
+
+출처: https://coding-restaurant.tistory.com/61 [코딩맛집]
+	
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

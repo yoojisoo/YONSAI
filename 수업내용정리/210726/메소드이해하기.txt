@@ -1,0 +1,19 @@
+[메소드 이해하기]
+* 두수의합을 구한 결과값필요???
+1) 메소드명 sum()
+2)  매개변수 유무 : int n1, int n2
+3) return 유무 : int r
+--------------------------
+-메소드 원형
+int sum(int n1, int n2);
+-메소드 작성
+int sum(int n1, int n2){
+     int r = n1 + n2;
+     return r;
+}
+-----------------------
+[실제 사용할때, 호출할때]
+int result;
+num1 = 10, num2 =5;
+//합을  구한다
+result = sum(num1,num2);

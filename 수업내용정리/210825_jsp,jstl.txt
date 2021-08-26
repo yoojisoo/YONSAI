@@ -1,0 +1,75 @@
+el 표현식
+=>  <%= str %>
+=>  ${str }
+
+위에껄로 써도 되는데, 밑에걸로 연습하는게 좋음.
+
+/  => root경로(localhost/) 절대경로로 간다..
+./  =>
+../  =>
+
+jspl - web-inf폴더에있는 jsp파일들...
+jstl sql - member 폴더에있는 jsp파일들...
+
+
+
+
+<webmarket의 인트로맵 작성해보기>
+
+*로그인과 회원가입(JSTL :sql기법사용)
+ 성공시
+=> member/resultMember.jsp?msg=2
+ 실패시
+=>member/loginMember.jsp?error=1
+
+*회원가입
+=> member/addMember.jsp
+ 성공시 (/오류시 팝업)
+=> member/resultMember.jsp?msg=1
+
+*회원수정
+=> member/updateMember.jsp
+ 성공시/회원탈퇴 - 지금 오류뜸
+
+-------------------------------------------
+
+*상품목록
+=> products.jsp
+*상품상세보기
+=> product.jsp?id=P1234
+*상품주문-장바구니로연결
+*장바구니
+=> cart.jsp
+*장바구니-주문하기(배송정보등록)
+=> /shippingInfo.jsp?cartId=4E52DF7A2B484D241B6283243AF27F10
+ 정보등록 성공
+=> orderConfirmation.jsp
+ 주문완료 -> 상품목록돌아가기버튼
+=> thankCustomer.jsp
+ 주문취소 -> 상품목록돌아가기버튼
+=> checkOutCancelled.jsp
+ 이전 -> 상품목록돌아가기버튼
+=> ShippingInfo.jsp?cartId=4E52DF7A2B484D241B6283243AF27F10
+
+===== 이미지 업로드 =====
+*상품등록
+*상품수정
+ 상품등록&수정&삭제 에러
+=> login.jsp?error=1
+*게시판
+=> BoardListAction.do?pageNum=1
+ 검색시
+=> BoardListAction.do
+ 글쓰기
+ 실패=> 로그인하라고 팝업뜸
+ 성공=> BoardWriteForm.do?id=admin2 //=>게시판으로 돌아옴
+*게시글보기
+=> BoardViewAction.do?num=1&pageNum=1
+ 수정
+=> BoardUpdateAction.do?num=1&pageNum=1
+ 삭제
+=> 바로돼버림 ㅋㅋ
+
+홈
+=> welcome.jsp
+

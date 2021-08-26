@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;uploadFile&apos;&#x0D;&#x0A;- Original project: &apos;WebMarket&apos;&#x0D;&#x0A;- Destination element: &apos;uploadFile&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     P1236.png&#x0D;&#x0A;     Lighthouse.jpg&#x0D;&#x0A;     P1235.png&#x0D;&#x0A;     P1234.png" description="Copy files" element1="WebContent/resources/images/P1236.png" element2="WebContent/resources/images/Lighthouse.jpg" element3="WebContent/resources/images/P1235.png" element4="WebContent/resources/images/P1234.png" files="4" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1629791649725" target="/WebMarket/WebContent/uploadFile" units="0" version="1.0"/>
+</session>

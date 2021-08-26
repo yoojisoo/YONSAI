@@ -1,0 +1,22 @@
+
+8월 18, 2021 17:41:23.258 NEW SESSION
+8월 18, 2021 17:41:23.258 [7076:5708:0818/174123.241:ERROR:device_event_log_impl.cc(214)] [17:41:23.241] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+
+8월 24, 2021 16:09:58.955 NEW SESSION
+8월 24, 2021 16:09:58.955 [7352:6568:0824/160958.953:ERROR:device_event_log_impl.cc(214)] [16:09:58.954] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+8월 24, 2021 16:34:20.936 [9328:256:0824/163420.935:ERROR:device_event_log_impl.cc(214)] [16:34:20.936] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+8월 24, 2021 16:40:27.96 [3332:2944:0824/164027.096:ERROR:device_event_log_impl.cc(214)] [16:40:27.095] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+
+8월 25, 2021 09:21:03.754 NEW SESSION
+8월 25, 2021 09:21:03.754 [6404:1920:0825/092103.746:ERROR:device_event_log_impl.cc(214)] [09:21:03.746] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+8월 25, 2021 10:18:18.757 [6404:8252:0825/101818.757:ERROR:database.cc(1711)] Passwords sqlite error 2067, errno 0: UNIQUE constraint failed: logins.origin_url, logins.username_element, logins.username_value, logins.password_element, logins.signon_realm, sql: INSERT INTO logins (origin_url, action_url, username_element, username_value, password_element, password_value, submit_element, signon_realm, date_created, blacklisted_by_user, scheme, password_type, times_used, form_data, date_synced, display_name, icon_url, federation_url, skip_zero_click, generation_upload_status, possible_username_pairs, id, date_last_used, moving_blocked_for) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+8월 25, 2021 10:38:26.429 [6404:3916:0825/103826.428:ERROR:database.cc(1711)] Passwords sqlite error 2067, errno 0: UNIQUE constraint failed: logins.origin_url, logins.username_element, logins.username_value, logins.password_element, logins.signon_realm, sql: INSERT INTO logins (origin_url, action_url, username_element, username_value, password_element, password_value, submit_element, signon_realm, date_created, blacklisted_by_user, scheme, password_type, times_used, form_data, date_synced, display_name, icon_url, federation_url, skip_zero_click, generation_upload_status, possible_username_pairs, id, date_last_used, moving_blocked_for) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+8월 25, 2021 10:50:15.499 [6404:10520:0825/105015.499:ERROR:database.cc(1711)] Passwords sqlite error 2067, errno 0: UNIQUE constraint failed: logins.origin_url, logins.username_element, logins.username_value, logins.password_element, logins.signon_realm, sql: INSERT INTO logins (origin_url, action_url, username_element, username_value, password_element, password_value, submit_element, signon_realm, date_created, blacklisted_by_user, scheme, password_type, times_used, form_data, date_synced, display_name, icon_url, federation_url, skip_zero_click, generation_upload_status, possible_username_pairs, id, date_last_used, moving_blocked_for) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+8월 25, 2021 14:42:37.677 [6404:1920:0825/144237.677:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.75 s for first_image_paint 1.736 s
+8월 25, 2021 14:42:38.747 [6404:1920:0825/144238.746:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.75 s for first_image_paint 1.736 s
+8월 25, 2021 15:11:10.134 [6404:1920:0825/151110.133:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.75 s for first_image_paint 1.736 s
+8월 25, 2021 18:55:00.249 [11476:3272:0825/185500.249:ERROR:device_event_log_impl.cc(214)] [18:55:00.248] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+
+8월 26, 2021 16:24:59.483 NEW SESSION
+8월 26, 2021 16:24:59.483 [1264:3700:0826/162459.482:ERROR:device_event_log_impl.cc(214)] [16:24:59.482] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+8월 26, 2021 17:43:50.924 [5080:8300:0826/174350.924:ERROR:device_event_log_impl.cc(214)] [17:43:50.924] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.

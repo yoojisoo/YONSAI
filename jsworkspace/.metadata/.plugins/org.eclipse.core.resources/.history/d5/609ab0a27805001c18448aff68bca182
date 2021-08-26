@@ -1,0 +1,55 @@
+<%@page import="java.time.LocalDate"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Date"%>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+<script src="../js/jquery-3.6.0.js"></script>
+</head>
+<body>
+	<h1>login</h1>
+	<hr>
+
+	<%
+	LocalDate now = LocalDate.now();
+	int year = now.getYear();
+	int month = now.getMonthValue();
+	int day = now.getDayOfMonth();
+	int i =0;%>
+
+		<form action="loginOK.jsp" method="post">
+			<p>아이디 <input type="text" name="id"> </p>
+			<p>비밀번호 <input type="text" name="pw"></p>
+			<p>이메일 <input type="text" name="email"></p>
+
+			<form>
+				<select name = "year">
+				<%for(i=1910; i<=year; i++){ %>
+					<option value="<%=i%>"> <%=i %> </option>		
+				<%}%>
+				</select>년
+				
+				<select name = "month">
+				<%for(i=1; i<=12; i++){ %>
+					<option value="<%=i%>"> <%=i %> </option>		
+				<%}%>
+				</select>월
+				
+				<select name = "day">
+				<%for(i=1; i<=31; i++){ %>
+					<option value="<%=i%>"> <%=i %> </option>		
+				<%}%>
+				</select>일
+			</form>
+			
+			<P><input type="submit" value="전송"></P>
+		</form>
+		
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트</title>
+<script>
+
+	alert("확인창 오픈!!!!!");
+	console.log("브라우저 콘솔창에 출력됨");
+	
+	var num = prompt("숫자입력 : ");
+	console.log(num);
+	
+	function test(){ //버튼을 누르면 호출
+		alert("함수호출됨");
+	 	var str = "<b>안녕하세요</b><br>";
+	 	str += "이름 : <input type='text' name='name' id='name'><br>";
+	 	str += "나이 : <input type='text' name='age' id='age'><br>";
+	 	
+		//document.write(str); //문서내에 출력
+		//출력할 위치 선정
+		var t = document.getElementById("testspan"); //★★★★★ 완전 중요해ㅔ~~
+		t.innerHTML = str; //str를 t내에 html출력. 구현하는것
+		t.style.color="red"; //스타일지정
+	}
+</script>
+</head>
+<body>
+	<div>
+		<button type="button" onclick="test();">함수호출</button>	
+	</div>
+	<div id="testspan">여기가 어딘디</div>
+</body>
+</html>
+
+
+
+
