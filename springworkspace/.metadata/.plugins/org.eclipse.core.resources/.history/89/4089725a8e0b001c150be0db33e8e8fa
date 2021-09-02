@@ -1,0 +1,30 @@
+package kr.co.job.domain;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+public class LoginControllerExam {
+	
+	
+	private static final Logger log = LoggerFactory.getLogger(LoginControllerExam.class);
+	
+	//어노테이션, 요청
+	@RequestMapping(value="loging/loginForm" GET)
+	log.info("로그인 폼으로 이동");
+	String userID = getParameter("userID");
+	String userName = getParameter("userName");
+	
+	ModelAndView mav1 = new ModelAndView();
+	
+	
+	//처리
+	mav1.add("userID", userID);
+	mav1.add("userName", userName);
+	mav1.
+	
+	//디스패치(이동)
+
+
+}

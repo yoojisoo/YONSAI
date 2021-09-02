@@ -1,0 +1,10 @@
+package co.kr.job;
+
+public class goodsVO {
+	
+	
+	private String name;
+	private String price;
+	
+
+}

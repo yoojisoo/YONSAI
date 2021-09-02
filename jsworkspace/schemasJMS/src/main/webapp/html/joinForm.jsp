@@ -26,7 +26,7 @@
 			<p>비밀번호 <input type="password" name="pw1" required></p>
 			<p>비밀번호 확인 <input type="password" name="pw2" placeholder="똑같이 써요~~" autofocus required></p>
 			<p>이름 <input type="text" name="name"></p>
-			<p>핸드폰번호 <input type="text" name="phon" required></p>
+			<p>핸드폰번호 <input type="text" name="phone" required></p>
 			<p>메일주소 <input type="mail" name="mail"></p>
 			
 			<select name = "year">

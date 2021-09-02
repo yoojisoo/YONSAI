@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>  
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>상품명 : ${name }</p>
+	<p>가격 : ${price }</p>
+	<p>제조일 : ${makeDate }</p>
+	
+	<p>${product.name }</p>
+	<p>${product.price }</p>
+	<p>${product.makeDate }</p>
+	
+	<p>${mgoods.name }</p>
+	<p>${mgoods.price }</p>
+	<p>${mgoods.makeDate }</p>
+</body>
+</html>

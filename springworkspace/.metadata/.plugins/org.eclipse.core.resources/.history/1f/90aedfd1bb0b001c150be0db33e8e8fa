@@ -1,0 +1,10 @@
+package kr.co.job.domain;
+
+public class goodsVO {
+	
+	
+	private String name;
+	private String price;
+	private String makeDate;
+
+}

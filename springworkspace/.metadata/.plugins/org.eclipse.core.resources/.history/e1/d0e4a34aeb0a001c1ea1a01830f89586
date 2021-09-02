@@ -1,0 +1,25 @@
+package kr.co.job;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class LoginController {
+	private static final Logger log = LoggerFactory.getLogger(LoginController.class);
+	
+	// ModelAndView 클래스를 이용한 매핑
+	@RequestMapping(value = "login/loginForm", method = RequestMethod.GET)
+	public ModelAndView loginForm() {
+		log.info("여기는 로그인폼 이동입니다.");
+		ModelAndView mav = new ModelAndView();
+		
+		mav.addObject("str", "Hello"); //모델 데이터
+		mav.setViewName("login/loginForm"); // view 이동(*.jsp) : 디스패치
+		return mav;
+	}
+	
+}

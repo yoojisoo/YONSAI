@@ -1,0 +1,27 @@
+package kr.co.job;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class GoodsController {
+	
+	
+	private static final Logger log = LoggerFactory.getLogger(LoginController.class);
+	
+	@RequestMapping(value="goods/goodForm", method=RequestMethod.GET) //맵핑하는거야
+		public ModelAndView goodForm() { //메소드~ 어디서든 쓸꺼니까 public인거지!
+		log.info("상품입력폼"); //메소드 썻다고 log로 알려줘
+		ModelAndView mav = new ModelAndView();	//이걸해야 데이터를 보여줄수 있대
+		mav.setViewName("goods/goodForm"); //데이터 보여주는거래
+		return mav; //리턴은 왜하지??
+	}
+	
+	
+	
+
+}
